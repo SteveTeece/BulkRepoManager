@@ -13,7 +13,8 @@ To use this application, you will need to set up a Personal Access Token on GitH
 * Allow user to enter a Personal Access Token
 * List all of the user's GitHub Repos
 * Allow multi-selection of repos by using a checkbox
-* Ask user for final confirmation before deleting repositories from GitHub.
+* Ask user for final confirmation before deleting repositories from GitHub
+* Allow user to select Organisation to delete repos from
 
 ## Contributing
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
