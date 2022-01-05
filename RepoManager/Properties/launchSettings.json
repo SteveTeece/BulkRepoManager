@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "RepoMnager": {
+    "RepoManager": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
