@@ -1,9 +1,20 @@
 ﻿@page "/"
+@using RepoManager.Controls
 
-<PageTitle>Index</PageTitle>
+@using Syncfusion.Blazor.Navigations
+<br />
+<br/>
+<div class="top-row pl-4 ">
+    <a class="navbar-brand top-row" href=""><h1>Bulk Repository Manager</h1></a>
+    
+</div>
+<div class="row">
+    <div class="col-3">
 
-<h1>Hello, world!</h1>
+        <OrgTree />
+    </div>
+    <div class="col-9">
+        <RepoGrid />
+    </div>
+</div>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
