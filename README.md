@@ -25,6 +25,13 @@ If you have a suggestion that would make this better, please fork the repo and c
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
+## Dependencies
+This project is dependent on the following NuGet packages:
+* SyncFusion.Blazor.Grid
+* SyncFusion.Blazor.Navigations
+* Azure.Identity
+* Azure.Security.KeyVault.Secrets
+
 ## Acknowledgements
 Inspired by the frustration of deleting multiple repositories, and this article by Jalal Kiani (https://medium.com/analytics-vidhya/delete-all-unused-github-repositories-using-github-api-18ea4d17b8e9)
 
