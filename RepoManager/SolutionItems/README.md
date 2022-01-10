@@ -1,3 +1,5 @@
+[![Build and Test](https://github.com/SteveTeece/BulkRepoManager/actions/workflows/BRSRepoManager.yml/badge.svg)](https://github.com/SteveTeece/BulkRepoManager/actions/workflows/BRSRepoManager.yml)
+
 # Bulk Repository Manager
 
 ## Description
