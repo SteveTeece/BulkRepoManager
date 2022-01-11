@@ -19,7 +19,11 @@ To use this application, you will need to set up a Personal Access Token on GitH
 * Allow user to select Organisation to delete repos from
 
 ## Contributing
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
+
+You can also simply open an issue with the tag "enhancement", or start a new thread in the Discussions.
+
+Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
@@ -31,6 +35,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 This project is dependent on the following NuGet packages:
 * SyncFusion.Blazor.Grid
 * SyncFusion.Blazor.Navigations
+* Azure.Extensions.AspNetCore.Configurations.Secrets
 * Azure.Identity
 * Azure.Security.KeyVault.Secrets
 
