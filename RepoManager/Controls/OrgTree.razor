@@ -3,55 +3,48 @@
 
 <h4>Sample Treeview</h4>
 <p style="color: darkred; font-weight: bold;">Ensure view is updated to reflect design</p>
-<SfTreeView TValue="MailItem">
-    <TreeViewFieldsSettings TValue="MailItem" Id="Id" DataSource="@MyFolder" Text="FolderName" ParentID="ParentId" HasChildren="HasSubFolders" Expanded="Expanded"></TreeViewFieldsSettings>
+<SfTreeView TValue="RepoItem">
+    <TreeViewFieldsSettings TValue="RepoItem" Id="Id" DataSource="@RepoList" Text="RepoName" HasChildren="HasSubFolders" Expanded="Expanded"></TreeViewFieldsSettings>
 </SfTreeView>
 
 @code{
-    public class MailItem
+    public class RepoItem
     {
-        public string Id { get; set; }
-        public string ParentId { get; set; }
-        public string FolderName { get; set; }
+        public string Id { get; set; } = "";
+        public string ParentId { get; set; } = "";
+        public string OrgName { get; set; } = "";
         public bool Expanded { get; set; }
         public bool HasSubFolders { get; set; }
     }
-    List<MailItem> MyFolder = new List<MailItem>();
+    List<RepoItem> RepoList = new List<RepoItem>();
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        MyFolder.Add(new MailItem
+        RepoList.Add(new RepoItem
         {
             Id = "1",
-            FolderName = "Inbox",
+            OrgName = "User's Github Username",
             HasSubFolders = true,
             Expanded = true
         });
-        MyFolder.Add(new MailItem
+        RepoList.Add(new RepoItem
         {
             Id = "2",
             ParentId = "1",
-            FolderName = "Categories",
-            Expanded = true,
-            HasSubFolders = true
+            OrgName = "Sample Organisation 1",
         });
-        MyFolder.Add(new MailItem
+         RepoList.Add(new RepoItem
         {
-            Id = "3",
-            ParentId = "2",
-            FolderName = "Primary"
+            Id = "2",
+            ParentId = "1",
+            OrgName = "Sample Organisation 2",
         });
-        MyFolder.Add(new MailItem
+         RepoList.Add(new RepoItem
         {
-            Id = "4",
-            ParentId = "2",
-            FolderName = "Social"
+            Id = "2",
+            ParentId = "1",
+            OrgName = "Sample Organisation 3",
         });
-        MyFolder.Add(new MailItem
-        {
-            Id = "5",
-            ParentId = "2",
-            FolderName = "Promotions"
-        });
+        
     }
 }
