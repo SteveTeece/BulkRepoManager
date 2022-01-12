@@ -3,12 +3,12 @@
 
 <h4>Sample Treeview</h4>
 <p style="color: darkred; font-weight: bold;">Ensure view is updated to reflect design</p>
-<SfTreeView TValue="RepoItem">
-    <TreeViewFieldsSettings TValue="RepoItem" Id="Id" DataSource="@RepoList" Text="RepoName" HasChildren="HasSubFolders" Expanded="Expanded"></TreeViewFieldsSettings>
+<SfTreeView TValue="OrgItem">
+    <TreeViewFieldsSettings TValue="OrgItem" Id="Id" DataSource="@RepoList" Text="OrgName" HasChildren="HasSubFolders" Expanded="Expanded"></TreeViewFieldsSettings>
 </SfTreeView>
 
 @code{
-    public class RepoItem
+    public class OrgItem
     {
         public string Id { get; set; } = "";
         public string ParentId { get; set; } = "";
@@ -16,30 +16,30 @@
         public bool Expanded { get; set; }
         public bool HasSubFolders { get; set; }
     }
-    List<RepoItem> RepoList = new List<RepoItem>();
+    List<OrgItem> RepoList = new List<OrgItem>();
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        RepoList.Add(new RepoItem
+        RepoList.Add(new OrgItem
         {
             Id = "1",
             OrgName = "User's Github Username",
             HasSubFolders = true,
             Expanded = true
         });
-        RepoList.Add(new RepoItem
+        RepoList.Add(new OrgItem
         {
             Id = "2",
             ParentId = "1",
             OrgName = "Sample Organisation 1",
         });
-         RepoList.Add(new RepoItem
+         RepoList.Add(new OrgItem
         {
             Id = "2",
             ParentId = "1",
             OrgName = "Sample Organisation 2",
         });
-         RepoList.Add(new RepoItem
+         RepoList.Add(new OrgItem
         {
             Id = "2",
             ParentId = "1",
