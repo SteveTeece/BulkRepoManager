@@ -5,7 +5,7 @@ namespace RepoManager.Controls
 {
     public partial class RepoGrid : ComponentBase
     {
-        public List<RepoListItemModel> Repos { get; set; }
+        public List<RepoListItemModel> Repos { get; set; } = new();
 
         public RepoGrid(List<RepoListItemModel> repos)
         {
