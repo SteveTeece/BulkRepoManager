@@ -1,10 +1,11 @@
 ﻿@using Syncfusion.Blazor.Grids
-<h4>Sample Data Grid</h4>
-<SfGrid TValue="RepoListItemModel" DataSource="@Repos" ShowColumnChooser="true" AllowPaging="true" >
+
+<SfGrid TValue="RepoListItemModel" DataSource="@RepoList" ShowColumnChooser="true" AllowPaging="true" >
     <GridEditSettings AllowAdding="false" AllowEditing="true" AllowDeleting="false"></GridEditSettings>
      <GridColumns>
          <GridColumn Field=@nameof(RepoListItemModel.IsSelected) HeaderText="Select" EditType = "EditType.BooleanEdit" Width="75"></GridColumn>
          <GridColumn Field=@nameof(RepoListItemModel.RepoName) HeaderText="Repository Name" ></GridColumn>
      </GridColumns>
 </SfGrid>
+
 

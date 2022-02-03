@@ -1,0 +1,6 @@
+﻿@using Syncfusion.Blazor.Navigations
+
+<SfTreeView TValue="TreeViewItemModel" AllowMultiSelection=false>
+    <TreeViewFieldsSettings DataSource="@TreeSourceData" 
+        Id="Id" Text="FolderName" ParentID="ParentId" HasChildren="HasSubFolders" Expanded="Expanded"></TreeViewFieldsSettings>
+</SfTreeView>
