@@ -1,23 +1,23 @@
 ﻿@page "/"
+@using Octokit
 @using RepoManager.Controls
 
 @using Syncfusion.Blazor.Navigations
-<br />
-<br/>
-@*<div class="top-row pl-4 ">
-    <a class="navbar-brand top-row" href=""><h1>Bulk Repository Manager</h1></a>
-    
-</div>*@
 <div>
-    <p>Put usage instructions here</p>
-    <br />
+    <h2 style="text-align: center;">Bulk Repository Manager</h2>
+    <p>This web page allows you to conduct selected bulk operations on your GitHub repositories.</p>
+    <p>To continue, you need to connect to GitHub by clicking the button</p>  
+    <p></p>
+    <button class="btn btn-primary" @onclick="GitHubLogin">Gonnect to GitHub</button>
+    <p></p>
+    <hr />
 </div>
 <div class="row">
     <div class="col-3">
-        <OrgTree />
+        <UserTree TreeSourceData="@Tree" />
     </div>
     <div class="col-9">
-        <RepoGrid />
+        <RepoGrid RepoList="@RepoList" />
     </div>
 </div>
 

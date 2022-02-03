@@ -3,10 +3,10 @@ using RepoManager.Models;
 
 namespace RepoManager.Controls
 {
-    public partial class RepoGrid : ComponentBase
+    public partial class UserTree : ComponentBase
     {
         [Parameter]
-        public List<RepoListItemModel> RepoList { get; set; } = new();
+        public List<TreeViewItemModel> TreeSourceData { get; set; } = new();
 
     }
 }
